@@ -5,10 +5,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 //iniciando o DB
-mongoose.connect("mongodb://localhost:27017/nodeapi", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/nodeapi",{ useNewUrlParser: true ,useUnifiedTopology: true });
 
 //criando primeira rota
 app.get("/", (req, res) => {
